@@ -3,9 +3,15 @@
 const vue = new Vue({
     el: '#vue',
     data: {
-      toDoPred1  : 'Fare i compiti',
-      toDoPred2  : 'Fare la spesa',
-      toDoPred3  : 'Fare il bucato'
+    //   toDoPred1  : 'Fare i compiti',
+    //   toDoPred2  : 'Fare la spesa',
+    //   toDoPred3  : 'Fare il bucato'
+
+      toDoPreds: [
+        'Fare i compiti',
+        'Fare la spesa',
+        'Fare il bucato'
+      ]
     },
 
     methods: {
