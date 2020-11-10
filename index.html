@@ -27,8 +27,9 @@
             
             <main>
                 <div class="box-todo">
-                    <div class="todo">
-                        <h5 v-for="(todoPred, index) in toDoPreds"><span><i class="fas fa-times"></i></span></h5>
+                    <div class="todo" v-for="(todoPred, index) in toDoPreds">
+                        <h5>{{todoPred}}<span><i class="fas fa-times"></i></span></h5>
+                        
                     </div>
                     <!-- <div class="todo">
                         <h5>Fare i compiti <span><i class="fas fa-times"></i></span></h5>
