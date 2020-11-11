@@ -19,7 +19,11 @@ const vue = new Vue({
     methods: {
         // cliccando il bottone 'aggiungi' la funzione aggiunge un To-do alla lista
         aggiungiTodo(){
-            this.toDos.push(this.newToDo);
+            // gestisco il caso di input vuoto e dell' input con lo spazio (l'ultimo caso con trim())
+            if(this.newToDo.trim() != ""){
+                this.toDos.push(this.newToDo);
+            }
+           
         }
     }
 });
