@@ -32,6 +32,13 @@ const vue = new Vue({
         cancellaTodo(){
             // con pop() si cancella sempre l' ultimo elemento dell' array
             this.toDos.splice(this.toDo, 1);
+            
+            /* non funziona esattamente come vogliamo noi...
+            cancella elementi un po' a cazzo di cane!
+            index index
+             */
+            
+        
         }
     }
 });

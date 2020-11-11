@@ -29,14 +29,13 @@
                 <div class="box-todo">
                     <div class="todo" v-for="(toDo, index) in toDos">
                         <h5>{{toDo}}<span><i class="fas fa-times" @click="cancellaTodo"></i></span></h5>
-                        
                     </div>
-                    <!-- <div class="todo">
-                        <h5>Fare i compiti <span><i class="fas fa-times"></i></span></h5>
+                    
+                    <!-- se lista Todos ha 0 elementi viene visualizzato msg in h4 -->
+                    <div v-if='this.toDos.length == 0'>
+                        <h4>Non ci sono To-do!</h4>
                     </div>
-                    <div class="todo">
-                        <h5>Fare i compiti <span><i class="fas fa-times"></i></span></h5>
-                    </div> -->
+
                 </div>
             </main>
         </div>
