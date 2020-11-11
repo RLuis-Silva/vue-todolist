@@ -22,6 +22,8 @@ const vue = new Vue({
             // gestisco il caso di input vuoto e dell' input con lo spazio (l'ultimo caso con trim())
             if(this.newToDo.trim() != ""){
                 this.toDos.push(this.newToDo);
+                // ripulisco l' input una volta aggiunto il nuovo Todo
+                this.newToDo = "";
             }
            
         }
