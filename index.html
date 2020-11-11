@@ -20,15 +20,15 @@
                     <img src="./img/logo_notion.png" alt="">
                 </div>
                 <div>
-                    <input type="text" placeholder="Nuovo To-do">
-                    <button>Aggiungi</button>
+                    <input type="text" placeholder="Nuovo To-do" v-model="newToDo">
+                    <button @click="aggiungiTodo">Aggiungi</button>
                 </div>
             </header>
             
             <main>
                 <div class="box-todo">
-                    <div class="todo" v-for="(todoPred, index) in toDoPreds">
-                        <h5>{{todoPred}}<span><i class="fas fa-times"></i></span></h5>
+                    <div class="todo" v-for="(toDo, index) in toDos">
+                        <h5>{{toDo}}<span><i class="fas fa-times"></i></span></h5>
                         
                     </div>
                     <!-- <div class="todo">
