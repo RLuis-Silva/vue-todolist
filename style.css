@@ -50,23 +50,16 @@ main .box-todo{
     border-radius: 15px;
 }
 
-/* main .box-todo .todo{
-    border-bottom:solid 1px white;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-} */
-
-main .box-todo .todo h5{
+.box-todo .todo{
+    display: flex;
+    justify-content: space-between;
     border-bottom:solid 1px white;
     padding-bottom: 10px;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
+
 .todo span{
-    
-    right: 0;
-    margin: 90%;
     cursor: pointer;
 }
