@@ -20,7 +20,7 @@
                     <img src="./img/logo_notion.png" alt="">
                 </div>
                 <div>
-                    <input type="text" placeholder="Nuovo To-do" v-model="newToDo">
+                    <input type="text" placeholder="Nuovo To-do" v-model="newToDo" @keyup.enter="aggiungiTodo">
                     <button @click="aggiungiTodo">Aggiungi</button>
                 </div>
             </header>
