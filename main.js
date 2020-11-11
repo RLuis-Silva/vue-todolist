@@ -8,9 +8,9 @@ const vue = new Vue({
     //   toDoPred3  : 'Fare il bucato'
 
       toDos: [
-        'Fare i compiti',
-        'Fare la spesa',
-        'Fare il bucato'
+        'Fare i compiti1',
+        'Fare la spesa2',
+        'Fare il bucato3'
       ],
 
       newToDo: ''
@@ -26,6 +26,12 @@ const vue = new Vue({
                 this.newToDo = "";
             }
            
+        },
+
+
+        cancellaTodo(){
+            // con pop() si cancella sempre l' ultimo elemento dell' array
+            this.toDos.splice(this.toDo, 1);
         }
     }
 });
